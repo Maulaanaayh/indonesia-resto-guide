@@ -1,0 +1,295 @@
+#navbar {
+    padding: 0;
+    margin: 0;
+}
+#navbar header {
+    width: 100%;
+    max-height: 110px;
+    padding: 10px 120px;
+    text-decoration: none;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-transition: max-height 0.5s; 
+    -moz-transition: max-height 0.5s; 
+    -ms-transition: max-height 0.5s; 
+    -o-transition: max-height 0.5s; 
+    transition: max-height 0.5s;  
+}
+#navbar.sticky header{
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+    transition: 0.5s all;
+    z-index: 999;
+}
+#navbar.sticky-shrink header{
+    max-height: 75px;
+}
+#navbar.sticky-shrink header .logo img {
+    width: 50px;
+    transition: 0.5s;
+}
+#navbar .inner-width {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 13px;
+}
+#navbar .logo img {
+    width: 70px;
+    transition: 0.5s;
+}
+#navbar .button {
+    position: absolute;
+    right: 50px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+}
+#navbar .button a {
+    font-size: 12px;
+    padding: 8px 30px;
+}
+#navbar .navigation-menu {
+    margin-left: 40px;
+}
+#navbar .navigation-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+#navbar .navigation-menu ul li a {
+    color: black;
+}
+#navbar .navigation-menu ul li a.active {
+    color: var(--red);
+}
+#navbar .navigation-menu ul li a:hover {
+    color: var(--red);
+}
+@media (max-width: 1280px) {
+    #navbar header {
+        padding: 10px 50px;
+    }
+}
+@media (max-width: 768px){
+    #navbar header {
+        padding: 0;
+    }
+    #navbar.sticky-shrink header {
+        max-height: 70px;
+    }
+    #navbar.active header {
+        border-bottom: none;
+        transition: 1s all;
+    }
+    #navbar .logo {
+        padding: 10px 0 10px 45px;
+    }
+    #navbar .logo img {
+        width: 70px;
+    }
+    #navbar .button {
+        display: none;
+    }
+    #navbar .navigation-menu {
+        max-height: 0;
+        position: absolute;
+        top: 89px;
+        margin-left: -15px;
+        width: 100%;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -10px;
+        -webkit-transition: max-height 0.5s; 
+        -moz-transition: max-height 0.5s; 
+        -ms-transition: max-height 0.5s; 
+        -o-transition: max-height 0.5s; 
+        transition: max-height 0.5s;  
+    }
+    #navbar.sticky-shrink .navigation-menu {
+        top: 70px;
+    }
+    #navbar .navigation-menu.active {
+        max-height: 180px;
+    }
+    #navbar .navigation-menu ul li {
+        display: list-item;
+        padding: 10px 0 10px 27px;
+        margin-left: 0;
+    }
+    #navbar .menu-toggle-btn {
+        position: absolute;
+        left: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: visible;
+    }
+    #navbar .menu-toggle-btn .stick {
+        width: 20px;
+        height: 3px;
+        margin-top: 5px;
+        background-color: black;
+        transition: 0.5s linear;
+    }
+    #navbar.sticky-shrink .menu-toggle-btn .stick {
+        width: 15px;
+        height: 2px;
+    }
+    #navbar .menu-toggle-btn.active .stick:nth-child(1) {
+        transform: rotate(225deg);
+        margin-left: -4px;
+    }
+    #navbar .menu-toggle-btn.active .stick:nth-child(2) {
+        display: none;
+        transition: 3s all;
+    }
+    #navbar .menu-toggle-btn.active .stick:nth-child(3) {
+        transform: rotate(310deg);
+        margin-left: -5px;
+        margin-top: -3px;
+    }
+}
+@media (max-width: 576px) {
+    #navbar .logo {
+        padding: 10px 0px 10px 10px;
+    }
+    #navbar .logo img,
+    #navbar.sticky-shrink header .logo img {
+        width: 45px;
+    }
+    #navbar .navigation-menu {
+        top: 61px;
+    }
+    #navbar.sticky-shrink .navigation-menu {
+        top: 61px;
+    }
+    #navbar .navigation-menu ul li {
+        padding: 10px 0 10px 27px;
+    }
+    #navbar .navigation-menu ul li a {
+        font-size: 12px;
+    }
+    #navbar .menu-toggle-btn .stick,
+    #navbar.sticky-shrink .menu-toggle-btn .stick {
+        width: 15px;
+        height: 2px;
+    }
+    #navbar .menu-toggle-btn.active .stick:nth-child(1) {
+        transform: rotate(225deg);
+        margin-left: -4px;
+        margin-top: 5px;
+    }
+    #navbar .menu-toggle-btn.active .stick:nth-child(3) {
+        transform: rotate(310deg);
+        margin-left: -5px;
+        margin-top: -2px;
+    }
+}
+/* End Navbar */
+
+/* footer */
+#footer {
+    padding: 60px 120px 80px 120px;
+    background-color: #202020;
+    color: white;
+}
+#footer h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+#footer ul li {
+    margin-bottom: 13px;
+}
+#footer ul li a {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+#footer ul li a:hover {
+    color: white;
+}
+#footer ul.icon {
+    margin-left: -5px;
+}
+#footer ul.icon li a {
+    display: flex;
+    align-items: center;
+}
+#footer ul.icon li {
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+#footer ul.icon li:hover {
+    border-radius: 5px;
+}
+#footer ul.icon li.facebook:hover {
+    background-color: #4267B2;
+}
+#footer ul.icon li.twitter:hover {
+    background-color: #FBBC05;
+}
+#footer ul.icon li.instagram:hover {
+    background-color: purple;
+}
+#footer .copyright {
+    margin-top: 100px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+#footer .irg-title {
+    font-size: 33px;
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 70px;
+}
+@media (max-width: 1280px) {
+    #footer {
+        padding: 80px 50px;
+    }
+}
+@media (max-width: 768px) {
+    #footer {
+        padding: 60px 35px 80px 35px;
+    }
+    #footer h5.title {
+        margin-top: 20px;
+    }
+    #footer .irg-title {
+        font-size: 33px;
+        font-weight: 600;
+        color: var(--red);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 576px) {
+    #footer {
+        padding: 20px 15px;
+    }
+    #footer h5.title {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #footer ul li {
+        margin-bottom: 5px;
+    }
+    #footer ul li a {
+        font-size: 12px;
+    }
+    #footer .copyright {
+        margin-top: 20px;
+        font-size: 10px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+/* End Footer */
