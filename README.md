@@ -2,14 +2,14 @@
 
 # Indonesia-Resto-Guide
 
-Landing Page website created for the company PT. Imaji Cipta, built with Laravel Framework. provide clean and simple design
+Landing Page website created for the company PT. Imaji Cipta, built with Laravel Framework. Provide clean and simple design
 
-Indonesia Resto Guide adalah Aplikasi khusus yang dibuat untuk menyediakan platform berbasis aplikasi penjualan makanan dan minuman di indonesia dengan kkategori resto.
+Indonesia Resto Guide adalah Aplikasi khusus yang dibuat untuk menyediakan platform berbasis aplikasi penjualan makanan dan minuman di indonesia dengan kategori resto.
 
 - Responsive Design
 - Simple and Clean
-- Provide best user experience
+- Easy to maintain
   
 ## Website
-Original website URL <a href="https://indonesiarestoguide.id">Cilck Here</a>
+Original website <a href="https://indonesiarestoguide.id">cilck here</a>
 
